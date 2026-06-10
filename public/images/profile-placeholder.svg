@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1086" height="1448" viewBox="0 0 1086 1448">
+  <rect width="1086" height="1448" fill="#e8e2d8"/>
+  <rect x="43.44" y="86.88" width="999.12" height="1274.24" fill="none" stroke="#241a10" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="10 8"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, serif" font-style="italic" font-size="76" fill="#241a10" fill-opacity="0.65">Your Photo</text>
+  <text x="50%" y="821.74" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="3" fill="#241a10" fill-opacity="0.4">REPLACE WITH YOUR OWN IMAGE</text>
+</svg>

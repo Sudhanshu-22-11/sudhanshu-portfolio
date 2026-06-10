@@ -1,0 +1,24 @@
+# Your Name
+
+> Your Name is an independent 3D immersive web designer. Replace this file with a short, factual summary of who you are and what you do — AI assistants and crawlers read it to understand your site.
+
+## Key Pages
+- [Home](https://example.com/): Overview of Your Name, 3D immersive web designer.
+- [Work](https://example.com/work): Portfolio of 3D websites, immersive experiences, and case studies.
+- [About](https://example.com/about): Bio, skills, and experience.
+- [Services](https://example.com/services): The services you offer.
+- [Journal](https://example.com/journal): Articles and writing.
+- [Contact](https://example.com/contact): How to get in touch — hello@example.com.
+
+## Selected Projects
+- [Project One](https://example.com/work/project-one): One-line description of project one.
+- [Project Two](https://example.com/work/project-two): One-line description of project two.
+- [Project Three](https://example.com/work/project-three): One-line description of project three.
+- [Project Four](https://example.com/work/project-four): One-line description of project four.
+
+## Contact & Profiles
+- Email: hello@example.com
+- Location: Your City, Country
+- LinkedIn: https://linkedin.com/in/yourhandle
+- Instagram: https://www.instagram.com/yourhandle
+- Twitter/X: https://twitter.com/yourhandle
