@@ -4,6 +4,10 @@ A designer portfolio website template built with **Next.js**, **React Three Fibe
 
 All text and images are placeholders — search for "Your Name", "example.com", and "placeholder" to find everything you need to personalize.
 
+**New to this project?** Two guides are included:
+- [BUILDING-WITH-CLAUDE.md](BUILDING-WITH-CLAUDE.md) — how this site was actually made from scratch using Claude Code (Figma design + Sketchfab GLB models + a sky EXR), with the real prompts. Start here if you want to recreate or remix the 3D scene.
+- [WORKFLOW.md](WORKFLOW.md) — the technical architecture phase by phase (stack, data model, 3D scene internals, SEO, deploy).
+
 ## Getting Started
 
 ```bash
