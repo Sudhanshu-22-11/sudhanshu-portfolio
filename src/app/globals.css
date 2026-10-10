@@ -81,16 +81,6 @@ body {
     0 16px 50px rgba(45, 30, 12, 0.3);
 }
 
-/* Music-player equalizer bars */
-@keyframes eq {
-  0%, 100% { height: 25%; }
-  50% { height: 100%; }
-}
-.animate-eq {
-  height: 100%;
-  animation: eq 0.85s ease-in-out infinite;
-}
-
 /* "Open to work" status — a fluid breathing pulse */
 @keyframes pulse-ring {
   0% { transform: scale(0.5); opacity: 0.6; }

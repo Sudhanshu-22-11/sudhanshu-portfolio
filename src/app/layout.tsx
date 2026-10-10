@@ -5,7 +5,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import Loader from "@/components/Loader";
-import MusicPlayer from "@/components/MusicPlayer";
 
 const notoSerifDisplay = Noto_Serif_Display({
   variable: "--font-display-next",
@@ -170,7 +169,6 @@ export default function RootLayout({
         className={`${notoSerifDisplay.variable} ${montserrat.variable} font-sans antialiased min-h-dvh flex flex-col w-full bg-background-light text-neutral-black`}
       >
         <Loader />
-        <MusicPlayer />
         <CustomCursor />
         <Navigation />
         <div className="flex-1 flex flex-col w-full">{children}</div>

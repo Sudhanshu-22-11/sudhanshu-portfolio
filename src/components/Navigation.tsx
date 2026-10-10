@@ -31,8 +31,6 @@ export default function Navigation() {
 
     useEffect(() => {
         document.body.style.overflow = menuOpen ? "hidden" : "";
-        // let the global music toggle know to get out of the way while the menu is open
-        window.dispatchEvent(new CustomEvent("menu-toggle", { detail: menuOpen }));
         const onKey = (e: KeyboardEvent) => {
             if (e.key === "Escape") setMenuOpen(false);
         };

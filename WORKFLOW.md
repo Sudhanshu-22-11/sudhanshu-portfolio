@@ -28,7 +28,7 @@ npm install three @react-three/fiber @react-three/drei @types/three gsap @gsap/r
 Set up the design system:
 - Load fonts with `next/font` in `src/app/layout.tsx` (here: Noto Serif Display italic for headlines, Montserrat for body) and expose them as CSS variables.
 - Define palette tokens in `globals.css` (background, ink, primary accent).
-- Build the global shell in `layout.tsx`: Navigation, Footer, Loader, CustomCursor, MusicPlayer wrap every page.
+- Build the global shell in `layout.tsx`: Navigation, Footer, Loader, CustomCursor wrap every page.
 
 ## Phase 2 — Pages and Content Model
 
@@ -66,7 +66,6 @@ This is what makes the site easy to hand to someone else: personalizing it means
 - **GSAP pattern:** every page uses `useGSAP` with a `scope` ref — headline lines slide up from an `overflow-hidden` mask, then content fades in staggered. Scroll reveals use `ScrollTrigger` with `start: "top bottom-=10%"`.
 - **Loader** (`Loader.tsx`): not fake — it reads real asset progress from drei's `useProgress` and only reveals the page when the EXR + GLBs are actually ready (with a 12s hard cap). Repeat visits get a short branded flash.
 - **CustomCursor**: a dot that scales up over `data-cursor="large"` elements.
-- **MusicPlayer**: floating toggle, hides while the menu is open via a custom event.
 - **SmartImage**: shimmer skeleton + lazy load + fade-in, reserves aspect ratio to avoid layout shift.
 - **Navigation**: full-screen clip-path wipe menu with staggered italic links.
 
