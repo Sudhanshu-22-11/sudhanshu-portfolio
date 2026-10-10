@@ -1,42 +1,62 @@
-# Immersive 3D Portfolio Template
+# Sudhanshu Kumar Pandey — 3D Developer Portfolio
 
-A designer portfolio website template built with **Next.js**, **React Three Fiber (Three.js)**, and **GSAP**. It ships with a real-time 3D hero scene (GLB models + HDRI lighting), scroll-triggered animations, a custom cursor, an asset-aware loading screen, a background music player, and data-driven Work and Journal sections.
+A production-grade, immersive 3D developer portfolio website built with **Next.js**, **React Three Fiber (Three.js)**, **GSAP**, and **Tailwind CSS**.
 
-All text and images are placeholders — search for "Your Name", "example.com", and "placeholder" to find everything you need to personalize.
+Featuring a real-time 3D hero environment, smooth scroll-triggered animations, interactive case study breakdowns, and verified project prototypes.
 
-**New to this project?** Two guides are included:
-- [BUILDING-WITH-CLAUDE.md](BUILDING-WITH-CLAUDE.md) — how this site was actually made from scratch using Claude Code (Figma design + Sketchfab GLB models + a sky EXR), with the real prompts. Start here if you want to recreate or remix the 3D scene.
-- [WORKFLOW.md](WORKFLOW.md) — the technical architecture phase by phase (stack, data model, 3D scene internals, SEO, deploy).
+## 👤 Identity
+- **Developer:** Sudhanshu Kumar Pandey
+- **Role:** B.E. Data Science Student | Python Developer | Web Developer | Exploring AI & ML
+- **College:** PES Institute of Technology & Management (PESITM), Shivamogga, Karnataka, India
+- **Year:** 2nd Year
+- **Email:** [anshu402pandey@gmail.com](mailto:anshu402pandey@gmail.com)
+- **GitHub:** [https://github.com/Sudhanshu-22-11](https://github.com/Sudhanshu-22-11)
+- **LinkedIn:** [https://www.linkedin.com/in/sudhanshu-kumar-pandey-b52652381](https://www.linkedin.com/in/sudhanshu-kumar-pandey-b52652381)
 
-## Getting Started
+---
+
+## 🚀 Featured Projects
+1. **[FoodWise](https://github.com/Sudhanshu-22-11/FoodWise)** — AI-driven circular food waste management, industrial mass balance, and verified community hunger relief platform. *(Live demo: [https://food-wise-puce.vercel.app](https://food-wise-puce.vercel.app))*
+2. **[Exam Guardrail](https://github.com/Sudhanshu-22-11/Exam-Guardrail)** — Integrity-first online examination monitoring system with candidate environment enforcement and live proctor surveillance *(Team BrainBytes)*.
+3. **[ResQ-AI](https://github.com/Sudhanshu-22-11/ResQ-AI)** — Emergency first-response hybrid app and PWA featuring zero-network offline triage trees, 100 BPM CPR rhythm metronome, and 2-second hold-to-SOS.
+4. **[Aakanksha (Unified Tribal Scholarship)](https://github.com/Sudhanshu-22-11/sih-unified-tribal-scholarship)** — Unified Tribal Scholarship Portal prototype for the Ministry of Tribal Affairs (MoTA) *(Smart India Hackathon 2026)*.
+
+---
+
+## 🛠️ Technical Stack
+- **Frontend & 3D:** Next.js 16 (App Router), React 19, React Three Fiber, Three.js, GSAP, `@gsap/react`, Tailwind CSS
+- **Languages:** Python, C, JavaScript, TypeScript, HTML5, CSS3
+- **Data Science:** Pandas, NumPy, Matplotlib
+
+---
+
+## 🏆 Honors & Certifications
+- **Best Pitching Award — Team Anvay** (Project pitching and presentation achievement)
+- **Hack Fest 1.0 — Certificate of Participation**
+- **AI Fluency for Students — Certificate of Completion** (Issued by Anthropic; in collaboration with UCC, Ringling College of Art and Design, HEA, and National Forum)
+
+---
+
+## 💻 Getting Started Locally
 
 ```bash
+# Clone the repository
+git clone https://github.com/Sudhanshu-22-11/sudhanshu-portfolio.git
+cd sudhanshu-portfolio
+
+# Install dependencies
 npm install
+
+# Run the local development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Make It Yours
+## 🚢 Production Build & Deploy
 
-| What | Where |
-|------|-------|
-| Name, SEO metadata, social links | `src/app/layout.tsx` |
-| Hero name + tagline | `src/app/page.tsx` |
-| Projects (case studies) | `src/data/projects.js` + images in `public/images/projects/` |
-| Journal articles | `src/data/articles.ts` + images in `public/journal/` |
-| Bio, skills, testimonial | `src/app/about/page.tsx` |
-| Contact email + form endpoint | `src/app/contact/page.tsx` and `src/app/api/contact/route.ts` |
-| Footer / menu socials | `src/components/Footer.tsx`, `src/components/Navigation.tsx` |
-| Loader brand text | `src/components/Loader.tsx` |
-| Site URL for SEO | `src/app/sitemap.ts`, `src/app/robots.ts`, `src/app/layout.tsx`, `public/llms.txt` |
-| 3D hero scene | `src/components/HeroScene.tsx` + assets in `public/models/` and `public/hdri/` |
-| Background music | `public/music/track.m4a` |
+```bash
+npm run build
+```
 
-## The 3D Scene
-
-The hero scene (`src/components/HeroScene.tsx`) renders GLB models with an EXR sky environment via React Three Fiber. Swap the models in `public/models/` with your own GLB exports (compress them with DRACO/meshopt for fast loads) and adjust positions/lighting in the component.
-
-## Deploy
-
-Push to GitHub and import the repo on [Vercel](https://vercel.com/new) — zero config needed for Next.js.
+Deployable to [Vercel](https://vercel.com) or Netlify with zero configuration.
