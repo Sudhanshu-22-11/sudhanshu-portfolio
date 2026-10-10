@@ -63,7 +63,7 @@ export default function About() {
                             <div className="w-full max-w-sm sm:max-w-md lg:max-w-none mx-auto aspect-[3/4] overflow-hidden transition-all duration-700 rounded-2xl shadow-2xl border border-black/10 group">
                                 <img
                                     src="/images/profile-avatar.jpg"
-                                    alt="Sudhanshu Kumar Pandey — 3D Avatar Character"
+                                    alt="Sudhanshu Kumar Pandey — Professional Portrait"
                                     width={1086}
                                     height={1448}
                                     className="hero-image w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
