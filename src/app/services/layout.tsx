@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Services — Brand Identity, Custom Websites & Immersive 3D Landing Pages",
+    title: "Focus & Capabilities — Sudhanshu Kumar Pandey | Data Science & Web",
     description:
-        "Hire Your Name for professional brand identity design, custom business websites, and immersive 3D landing page design.",
+        "Technical focus and capabilities of Sudhanshu Kumar Pandey: Python development, data analysis, modern web applications, and practical AI prototyping.",
     alternates: {
         canonical: "/services",
     },
     openGraph: {
-        title: "Services — Brand Identity, Websites & 3D Landing Pages | Your Name",
+        title: "Focus & Capabilities — Sudhanshu Kumar Pandey",
         description:
-            "Professional brand identity design, custom business websites, and immersive 3D landing pages. Freelance services by Your Name.",
+            "Python development, data analysis with Pandas/NumPy, responsive web development, and AI prototyping by Sudhanshu Kumar Pandey.",
         url: "/services",
     },
 };

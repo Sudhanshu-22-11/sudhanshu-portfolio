@@ -60,13 +60,13 @@ export default function About() {
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
                         <div className="lg:col-span-5">
-                            <div className="w-full max-w-sm sm:max-w-md lg:max-w-none mx-auto aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 rounded-lg">
+                            <div className="w-full max-w-sm sm:max-w-md lg:max-w-none mx-auto aspect-[3/4] overflow-hidden transition-all duration-700 rounded-2xl shadow-2xl border border-black/10 group">
                                 <img
-                                    src="/images/profile-placeholder.svg"
-                                    alt="Sudhanshu Kumar Pandey — Data Science Student & Developer"
+                                    src="/images/profile-avatar.jpg"
+                                    alt="Sudhanshu Kumar Pandey — 3D Avatar Character"
                                     width={1086}
                                     height={1448}
-                                    className="hero-image w-full h-full object-cover object-center"
+                                    className="hero-image w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
                         </div>

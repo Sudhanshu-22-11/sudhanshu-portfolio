@@ -208,28 +208,33 @@ export default function ArticleDetail() {
                             Written by
                         </span>
                         <h3 className="text-2xl font-display font-bold uppercase tracking-tight">
-                            Your Name
+                            Sudhanshu Kumar Pandey
                         </h3>
                         <p className="font-sans text-base text-slate-600 mt-2 max-w-md leading-relaxed">
-                            Independent 3D immersive web designer, specializing
-                            in WebGL experiences, brand identity, and editorial web design.
+                            2nd-Year B.E. Data Science Student at PESITM Shivamogga, passionate about Python development, web applications, and practical AI systems.
                         </p>
-                        <div className="flex gap-6 mt-4">
+                        <div className="flex flex-wrap gap-6 mt-4">
                             <a
-                                href="https://example.com"
+                                href="https://github.com/Sudhanshu-22-11"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
                             >
-                                Hire Me
+                                GitHub
                             </a>
                             <a
-                                href="https://linkedin.com/in/yourhandle"
+                                href="https://www.linkedin.com/in/sudhanshu-kumar-pandey-b52652381"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
                             >
                                 LinkedIn
+                            </a>
+                            <a
+                                href="mailto:anshu402pandey@gmail.com"
+                                className="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            >
+                                Email
                             </a>
                         </div>
                     </div>

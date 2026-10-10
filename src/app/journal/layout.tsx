@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Journal — Insights on 3D Web Design, WebGL & Immersive Experiences",
+    title: "Journal — Sudhanshu Kumar Pandey | Engineering Insights & Case Breakdowns",
     description:
-        "Read articles by Your Name on 3D immersive web design, WebGL performance optimization, hiring a 3D web designer, and the future of interactive website experiences. Expert insights for brands seeking premium digital presence.",
+        "Read articles and technical retrospectives by Sudhanshu Kumar Pandey on circular food waste management (FoodWise), offline-first emergency systems (ResQ-AI), and public-service portals.",
     alternates: {
         canonical: "/journal",
     },
     openGraph: {
-        title: "Journal — 3D Web Design Insights & Articles | Your Name",
+        title: "Journal — Sudhanshu Kumar Pandey | Engineering Insights",
         description:
-            "Expert articles on 3D web design, WebGL, immersive landing pages, and interactive website development by Your Name.",
+            "Technical articles and case retrospectives by Sudhanshu Kumar Pandey, 2nd-Year Data Science Student @ PESITM Shivamogga.",
         url: "/journal",
     },
 };

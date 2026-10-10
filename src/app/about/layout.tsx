@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About — 3D Immersive Web Designer | Your City, Country",
+    title: "About — Sudhanshu Kumar Pandey | Data Science Student & Developer",
     description:
-        "Your Name is an independent 3D immersive web designer based in Your City, Country. Replace this with a short description of your specialties and availability.",
+        "Learn more about Sudhanshu Kumar Pandey, a 2nd-year B.E. Data Science student at PESITM Shivamogga, Karnataka. Python development, modern web applications, and practical AI.",
     alternates: {
         canonical: "/about",
     },
     openGraph: {
-        title: "About Your Name — 3D Immersive Web Designer",
+        title: "About Sudhanshu Kumar Pandey — Data Science Student & Developer",
         description:
-            "Independent 3D web designer. Replace this with your own short description for link previews.",
+            "2nd-Year Data Science Student @ PESITM Shivamogga. Python, Web Development, Data Science, and practical AI applications.",
         url: "/about",
+        images: ["/images/profile-avatar.jpg"],
     },
 };
 
@@ -23,10 +24,10 @@ export default function AboutLayout({
     const profileJsonLd = {
         "@context": "https://schema.org",
         "@type": "ProfilePage",
-        url: "https://example.com/about",
-        name: "About Your Name — 3D Immersive Web Designer",
-        mainEntity: { "@id": "https://example.com/#person" },
-        about: { "@id": "https://example.com/#person" },
+        url: "https://sudhanshu-pandey-portfolio.vercel.app/about",
+        name: "About Sudhanshu Kumar Pandey — Data Science Student & Developer",
+        mainEntity: { "@id": "https://sudhanshu-pandey-portfolio.vercel.app/#person" },
+        about: { "@id": "https://sudhanshu-pandey-portfolio.vercel.app/#person" },
     };
     return (
         <>

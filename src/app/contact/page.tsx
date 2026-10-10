@@ -106,7 +106,7 @@ export default function Contact() {
                             <form className="flex flex-col gap-12" onSubmit={handleSubmit}>
                                 <div className="group relative">
                                     <label className="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-2 font-bold">
-                                        01/ Your Name
+                                        01/ Full Name
                                     </label>
                                     <input
                                         className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-slate-300 py-4 px-0 text-xl focus:ring-0 placeholder:text-slate-300 focus:border-primary focus:outline-none"

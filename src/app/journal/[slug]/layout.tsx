@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { articlesData } from "@/data/articles";
 
-const siteUrl = "https://example.com";
+const siteUrl = "https://sudhanshu-pandey-portfolio.vercel.app";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -66,7 +66,7 @@ export default async function ArticleLayout({
               author: {
                   "@type": "Person",
                   "@id": `${siteUrl}/#person`,
-                  name: "Your Name",
+                  name: "Sudhanshu Kumar Pandey",
                   url: siteUrl,
               },
               publisher: { "@id": `${siteUrl}/#person` },

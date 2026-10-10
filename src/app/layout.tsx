@@ -20,10 +20,10 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const siteUrl = "https://github.com/Sudhanshu-22-11";
+const siteUrl = "https://sudhanshu-pandey-portfolio.vercel.app";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://github.com/Sudhanshu-22-11"),
+  metadataBase: new URL("https://sudhanshu-pandey-portfolio.vercel.app"),
   title: {
     default: "Sudhanshu Kumar Pandey — Data Science Student & Developer | Portfolio",
     template: "%s | Sudhanshu Kumar Pandey",
@@ -101,7 +101,7 @@ export default function RootLayout({
     mainEntityOfPage: `${siteUrl}/about`,
     image: {
       "@type": "ImageObject",
-      url: `/images/profile-placeholder.svg`,
+      url: `/images/profile-avatar.jpg`,
       width: 1086,
       height: 1448,
       caption: "Sudhanshu Kumar Pandey — Data Science Student & Developer",

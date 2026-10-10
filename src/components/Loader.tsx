@@ -103,7 +103,7 @@ export default function Loader() {
             className="fixed inset-0 z-[10000] flex flex-col items-center justify-center bg-background-light text-neutral-black"
         >
             <div className="loader-inner flex flex-col items-center gap-9">
-                <div className="text-[10px] font-bold uppercase tracking-[0.35em] text-slate-500">Your Name</div>
+                <div className="text-[10px] font-bold uppercase tracking-[0.35em] text-slate-500">Sudhanshu Kumar Pandey</div>
                 <div className="font-display text-7xl md:text-8xl font-medium leading-none tracking-tight tabular-nums">
                     <span ref={countRef}>00</span>
                     <span className="ml-1 align-top text-2xl text-slate-400">%</span>

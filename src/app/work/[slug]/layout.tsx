@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     const title = project.title;
-    const description = project.narrative || project.concept || `${title} — A case study by Your Name, 3D immersive web designer.`;
+    const description = project.narrative || project.concept || `${title} — A case study by Sudhanshu Kumar Pandey.`;
     const heroImage = project.heroImage || project.images?.[0];
 
     return {
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             canonical: `/work/${slug}`,
         },
         openGraph: {
-            title: `${title} | Your Name — 3D Web Designer`,
+            title: `${title} | Sudhanshu Kumar Pandey`,
             description: description.slice(0, 200),
             url: `/work/${slug}`,
             type: "article",
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         },
         twitter: {
             card: "summary_large_image",
-            title: `${title} | Your Name`,
+            title: `${title} | Sudhanshu Kumar Pandey`,
             description: description.slice(0, 200),
             images: heroImage ? [heroImage] : undefined,
         },
@@ -57,7 +57,7 @@ export default async function ProjectLayout({
     children: React.ReactNode;
     params: Promise<{ slug: string }>;
 }) {
-    const siteUrl = "https://example.com";
+    const siteUrl = "https://sudhanshu-pandey-portfolio.vercel.app";
     const { slug } = await params;
     const project = projectsData.find((p) => p.slug === slug);
     const heroImage = project?.heroImage || project?.images?.[0];
@@ -74,7 +74,7 @@ export default async function ProjectLayout({
               creator: {
                   "@type": "Person",
                   "@id": `${siteUrl}/#person`,
-                  name: "Your Name",
+                  name: "Sudhanshu Kumar Pandey",
                   url: siteUrl,
               },
           }

@@ -39,7 +39,7 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ["/api/"],
             },
         ],
-        sitemap: "https://example.com/sitemap.xml",
-        host: "https://example.com",
+        sitemap: "https://sudhanshu-pandey-portfolio.vercel.app/sitemap.xml",
+        host: "https://sudhanshu-pandey-portfolio.vercel.app",
     };
 }
