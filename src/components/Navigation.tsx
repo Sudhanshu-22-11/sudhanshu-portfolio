@@ -14,16 +14,15 @@ const navLinks = [
     { path: "/", num: "01", label: "Home" },
     { path: "/work", num: "02", label: "Work" },
     { path: "/about", num: "03", label: "About" },
-    { path: "/services", num: "04", label: "Services" },
+    { path: "/services", num: "04", label: "Focus" },
     { path: "/journal", num: "05", label: "Journal" },
     { path: "/contact", num: "06", label: "Contact" },
 ];
 
 const socials = [
-    { label: "Instagram", href: "https://www.instagram.com/yourhandle" },
-    { label: "LinkedIn", href: "https://linkedin.com/in/yourhandle" },
-    { label: "Twitter/X", href: "https://twitter.com/yourhandle" },
-    { label: "Behance", href: "https://www.behance.net/yourhandle" },
+    { label: "GitHub", href: "https://github.com/Sudhanshu-22-11" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/sudhanshu-kumar-pandey-b52652381" },
+    { label: "Email", href: "mailto:anshu402pandey@gmail.com" },
 ];
 
 export default function Navigation() {
@@ -50,7 +49,7 @@ export default function Navigation() {
             <header className="fixed top-0 left-0 w-full z-[1100] px-6 md:px-10 py-6 md:py-8 flex justify-between items-center pointer-events-none mix-blend-difference">
                 <Link
                     href="/"
-                    className="flex items-center gap-4 text-white pointer-events-auto"
+                    className="flex items-center gap-3 text-white pointer-events-auto"
                     onClick={() => setMenuOpen(false)}
                 >
                     <div className="size-8">
@@ -61,7 +60,7 @@ export default function Navigation() {
                             />
                         </svg>
                     </div>
-                    <h2 className="text-2xl font-medium leading-tight tracking-tighter">YN</h2>
+                    <h2 className="text-2xl font-medium leading-tight tracking-tighter">SKP</h2>
                 </Link>
 
                 <button
@@ -142,7 +141,7 @@ export default function Navigation() {
                     style={{ transitionDelay: menuOpen ? "0.55s" : "0s" }}
                 >
                     <span className="text-[10px] uppercase tracking-[0.3em] text-white/40">
-                        Your Name — Your City, Country
+                        Sudhanshu Kumar Pandey — Shivamogga, Karnataka, India
                     </span>
                     <div className="flex flex-wrap gap-5">
                         {socials.map((s) => (

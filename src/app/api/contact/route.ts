@@ -12,23 +12,24 @@ export async function POST(req: NextRequest) {
             );
         }
 
-        // Use Web3Forms API (free, no signup needed)
-        const response = await fetch("https://api.web3forms.com/submit", {
+        // Forward to formsubmit.co
+        const response = await fetch("https://formsubmit.co/ajax/anshu402pandey@gmail.com", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            },
             body: JSON.stringify({
-                access_key: process.env.WEB3FORMS_KEY || "",
-                subject: `New inquiry from ${name} — example.com`,
-                from_name: name,
-                email: email,
-                message: message,
-                to: "hello@example.com",
+                name,
+                email,
+                message,
+                _subject: `New inquiry from ${name} — Portfolio Contact`,
             }),
         });
 
         const data = await response.json();
 
-        if (data.success) {
+        if (data.success === "true" || data.success === true) {
             return NextResponse.json({ success: true });
         } else {
             return NextResponse.json(

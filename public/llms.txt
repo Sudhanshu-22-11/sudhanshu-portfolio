@@ -1,24 +1,24 @@
-# Your Name
+# Sudhanshu Kumar Pandey
 
-> Your Name is an independent 3D immersive web designer. Replace this file with a short, factual summary of who you are and what you do — AI assistants and crawlers read it to understand your site.
+> Sudhanshu Kumar Pandey is a 2nd-year B.E. Data Science student at PES Institute of Technology & Management (PESITM), Shivamogga, Karnataka, India. Passionate about Python development, web applications, data analysis, and practical AI systems.
 
 ## Key Pages
-- [Home](https://example.com/): Overview of Your Name, 3D immersive web designer.
-- [Work](https://example.com/work): Portfolio of 3D websites, immersive experiences, and case studies.
-- [About](https://example.com/about): Bio, skills, and experience.
-- [Services](https://example.com/services): The services you offer.
-- [Journal](https://example.com/journal): Articles and writing.
-- [Contact](https://example.com/contact): How to get in touch — hello@example.com.
+- [Home](https://github.com/Sudhanshu-22-11): Overview of Sudhanshu Kumar Pandey, portfolio, and skills.
+- [Work](https://github.com/Sudhanshu-22-11): Portfolio of software systems and hackathon prototypes.
+- [About](https://github.com/Sudhanshu-22-11): Background, education, technical skills, achievements, and certifications.
+- [Focus](https://github.com/Sudhanshu-22-11): Python data analysis, modern web development, and AI prototyping.
+- [Journal](https://github.com/Sudhanshu-22-11): Technical articles and project retrospectives.
+- [Contact](https://github.com/Sudhanshu-22-11): How to get in touch — anshu402pandey@gmail.com.
 
 ## Selected Projects
-- [Project One](https://example.com/work/project-one): One-line description of project one.
-- [Project Two](https://example.com/work/project-two): One-line description of project two.
-- [Project Three](https://example.com/work/project-three): One-line description of project three.
-- [Project Four](https://example.com/work/project-four): One-line description of project four.
+- [FoodWise](https://github.com/Sudhanshu-22-11/FoodWise): AI-driven circular food waste management, industrial mass balance, and verified community hunger relief platform. Live at https://food-wise-puce.vercel.app.
+- [Exam Guardrail](https://github.com/Sudhanshu-22-11/Exam-Guardrail): Integrity-first online examination monitoring system with candidate environment enforcement and live proctor surveillance (Team BrainBytes).
+- [ResQ-AI](https://github.com/Sudhanshu-22-11/ResQ-AI): Emergency first-response hybrid app and PWA featuring offline-first triage trees, CPR metronome, and 2-second hold-to-SOS.
+- [Unified Tribal Scholarship](https://github.com/Sudhanshu-22-11/sih-unified-tribal-scholarship): Aakanksha — Unified Tribal Scholarship Portal prototype for the Ministry of Tribal Affairs (Smart India Hackathon 2026).
 
 ## Contact & Profiles
-- Email: hello@example.com
-- Location: Your City, Country
-- LinkedIn: https://linkedin.com/in/yourhandle
-- Instagram: https://www.instagram.com/yourhandle
-- Twitter/X: https://twitter.com/yourhandle
+- Email: anshu402pandey@gmail.com
+- Location: Shivamogga, Karnataka, India
+- College: PES Institute of Technology & Management (PESITM), Shivamogga
+- GitHub: https://github.com/Sudhanshu-22-11
+- LinkedIn: https://www.linkedin.com/in/sudhanshu-kumar-pandey-b52652381

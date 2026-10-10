@@ -44,8 +44,7 @@ export default function Contact() {
         setErrorMsg("");
 
         try {
-            // Replace with your own email — formsubmit.co relays form submissions to it.
-            const res = await fetch("https://formsubmit.co/ajax/hello@example.com", {
+            const res = await fetch("https://formsubmit.co/ajax/anshu402pandey@gmail.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -55,7 +54,7 @@ export default function Contact() {
                     name: formData.name,
                     email: formData.email,
                     message: formData.message,
-                    _subject: `New inquiry from ${formData.name} — example.com`,
+                    _subject: `New inquiry from ${formData.name} — Sudhanshu Portfolio`,
                     _template: "table",
                 }),
             });
@@ -67,11 +66,11 @@ export default function Contact() {
                 setFormData({ name: "", email: "", message: "" });
             } else {
                 setStatus("error");
-                setErrorMsg(data.message || "Something went wrong. Please try again.");
+                setErrorMsg(data.message || "Something went wrong. Please reach out directly via anshu402pandey@gmail.com.");
             }
         } catch {
             setStatus("error");
-            setErrorMsg("Network error. Please try again.");
+            setErrorMsg("Network error. Please try again or email directly at anshu402pandey@gmail.com.");
         }
     };
 
@@ -84,18 +83,17 @@ export default function Contact() {
                         Touch
                     </h1>
                     <p className="font-sans text-lg md:text-xl max-w-xl text-slate-700 leading-relaxed">
-                        I&apos;m currently available for freelance projects and collaborations.
-                        Let&apos;s build something meaningful together.
+                        I am currently available for data science internships, collaborative hackathons, and freelance web development projects. Let&apos;s build something meaningful together.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24">
                     <div className="lg:col-span-7">
                         {status === "success" ? (
                             <div className="py-20 text-center">
-                                <div className="text-6xl mb-6">✓</div>
-                                <h2 className="text-3xl font-display font-bold mb-4">Message Sent!</h2>
+                                <div className="text-6xl mb-6 text-green-600">✓</div>
+                                <h2 className="text-3xl font-display font-bold mb-4">Message Delivered!</h2>
                                 <p className="font-sans text-lg text-slate-600 mb-8">
-                                    Thanks for reaching out. I&apos;ll get back to you within 24 hours.
+                                    Thank you for reaching out, Sudhanshu will get back to you shortly.
                                 </p>
                                 <CreativeButton onClick={() => setStatus("idle")} tone="dark" className="px-8 py-4">
                                     Send Another
@@ -107,12 +105,12 @@ export default function Contact() {
                         ) : (
                             <form className="flex flex-col gap-12" onSubmit={handleSubmit}>
                                 <div className="group relative">
-                                    <label className="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-2">
-                                        01/ Name
+                                    <label className="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-2 font-bold">
+                                        01/ Your Name
                                     </label>
                                     <input
                                         className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-slate-300 py-4 px-0 text-xl focus:ring-0 placeholder:text-slate-300 focus:border-primary focus:outline-none"
-                                        placeholder="Your name"
+                                        placeholder="Enter your name"
                                         name="name"
                                         type="text"
                                         required
@@ -121,12 +119,12 @@ export default function Contact() {
                                     />
                                 </div>
                                 <div className="group relative">
-                                    <label className="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-2">
+                                    <label className="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-2 font-bold">
                                         02/ Email Address
                                     </label>
                                     <input
                                         className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-slate-300 py-4 px-0 text-xl focus:ring-0 placeholder:text-slate-300 focus:border-primary focus:outline-none"
-                                        placeholder="email@example.com"
+                                        placeholder="your.email@example.com"
                                         name="email"
                                         type="email"
                                         required
@@ -135,12 +133,12 @@ export default function Contact() {
                                     />
                                 </div>
                                 <div className="group relative">
-                                    <label className="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-2">
+                                    <label className="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-2 font-bold">
                                         03/ Message
                                     </label>
                                     <textarea
                                         className="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-slate-300 py-4 px-0 text-xl focus:ring-0 placeholder:text-slate-300 resize-none focus:border-primary focus:outline-none"
-                                        placeholder="Tell me about your project"
+                                        placeholder="Tell me about your internship, project, or collaboration"
                                         name="message"
                                         rows={4}
                                         required
@@ -150,7 +148,7 @@ export default function Contact() {
                                 </div>
 
                                 {status === "error" && (
-                                    <p className="text-red-500 text-sm">{errorMsg}</p>
+                                    <p className="text-red-500 text-sm font-medium">{errorMsg}</p>
                                 )}
 
                                 <div className="pt-4">
@@ -167,83 +165,58 @@ export default function Contact() {
                     <div className="lg:col-span-5 flex flex-col justify-between social-links-container">
                         <div className="mb-16">
                             <h2 className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-8 font-bold">
-                                Direct
+                                Direct Contact
                             </h2>
                             <a
-                                className="text-2xl sm:text-3xl md:text-4xl font-bold hover:text-primary transition-colors underline decoration-1 underline-offset-8"
-                                href="mailto:hello@example.com"
+                                className="text-xl sm:text-2xl md:text-3xl font-bold hover:text-primary transition-colors underline decoration-1 underline-offset-8 break-all"
+                                href="mailto:anshu402pandey@gmail.com"
                             >
-                                hello@example.com
+                                anshu402pandey@gmail.com
                             </a>
+                            <p className="mt-4 text-xs uppercase tracking-widest text-slate-500 font-medium">
+                                Shivamogga, Karnataka, India
+                            </p>
                         </div>
                         <div>
                             <h2 className="text-xs uppercase tracking-[0.3em] text-slate-400 mb-8 font-bold">
-                                Socials
+                                Professional Links
                             </h2>
-                            <ul className="flex flex-col gap-4">
+                            <ul className="flex flex-col gap-5">
                                 <li>
                                     <a
                                         className="group flex items-center gap-4 text-lg font-medium hover:text-primary transition-colors"
-                                        href="https://www.instagram.com/yourhandle"
+                                        href="https://github.com/Sudhanshu-22-11"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
                                         <span className="text-[10px] text-slate-400 font-bold group-hover:text-primary transition-colors">
                                             01/
                                         </span>
-                                        Instagram
+                                        GitHub — @Sudhanshu-22-11 ↗
                                     </a>
                                 </li>
                                 <li>
                                     <a
                                         className="group flex items-center gap-4 text-lg font-medium hover:text-primary transition-colors"
-                                        href="https://linkedin.com/in/yourhandle"
+                                        href="https://www.linkedin.com/in/sudhanshu-kumar-pandey-b52652381"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
                                         <span className="text-[10px] text-slate-400 font-bold group-hover:text-primary transition-colors">
                                             02/
                                         </span>
-                                        LinkedIn
+                                        LinkedIn — Sudhanshu Kumar Pandey ↗
                                     </a>
                                 </li>
                                 <li>
                                     <a
                                         className="group flex items-center gap-4 text-lg font-medium hover:text-primary transition-colors"
-                                        href="https://twitter.com/yourhandle"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                        href="mailto:anshu402pandey@gmail.com"
                                     >
                                         <span className="text-[10px] text-slate-400 font-bold group-hover:text-primary transition-colors">
                                             03/
                                         </span>
-                                        Twitter/X
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        className="group flex items-center gap-4 text-lg font-medium hover:text-primary transition-colors"
-                                        href="https://www.behance.net/yourhandle"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <span className="text-[10px] text-slate-400 font-bold group-hover:text-primary transition-colors">
-                                            04/
-                                        </span>
-                                        Behance
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        className="group flex items-center gap-4 text-lg font-medium hover:text-primary transition-colors"
-                                        href="https://dribbble.com/yourhandle"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <span className="text-[10px] text-slate-400 font-bold group-hover:text-primary transition-colors">
-                                            05/
-                                        </span>
-                                        Dribbble
+                                        Email — anshu402pandey@gmail.com ↗
                                     </a>
                                 </li>
                             </ul>

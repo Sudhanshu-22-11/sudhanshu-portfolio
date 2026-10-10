@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = "https://example.com";
+    const baseUrl = "https://github.com/Sudhanshu-22-11";
 
     const staticPages = [
         {
@@ -45,10 +45,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ];
 
     const projectSlugs = [
-        "project-one",
-        "project-two",
-        "project-three",
-        "project-four",
+        "foodwise",
+        "exam-guardrail",
+        "resq-ai",
+        "unified-tribal-scholarship",
     ];
 
     const projectPages = projectSlugs.map((slug) => ({
@@ -59,9 +59,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
 
     const articleSlugs = [
-        "sample-article-one",
-        "sample-article-two",
-        "sample-article-three",
+        "building-foodwise-circular-waste-management",
+        "resq-ai-offline-first-emergency-response",
+        "democratizing-access-tribal-scholarship-sih",
     ];
 
     const articlePages = articleSlugs.map((slug) => ({
@@ -73,4 +73,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return [...staticPages, ...projectPages, ...articlePages];
 }
-

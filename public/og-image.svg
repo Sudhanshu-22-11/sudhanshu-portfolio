@@ -1,6 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#e8e2d8"/>
-  <rect x="48.0" y="37.8" width="1104.0" height="554.4" fill="none" stroke="#241a10" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="10 8"/>
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, serif" font-style="italic" font-size="44" fill="#241a10" fill-opacity="0.65">Your Name — Portfolio</text>
-  <text x="50%" y="371.7" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="17" letter-spacing="3" fill="#241a10" fill-opacity="0.4">REPLACE WITH YOUR OWN IMAGE</text>
+  <defs>
+    <linearGradient id="og-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14100c"/>
+      <stop offset="60%" stop-color="#1e1812"/>
+      <stop offset="100%" stop-color="#0d0a08"/>
+    </linearGradient>
+    <radialGradient id="og-glow" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#bb693a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#bb693a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#og-bg)"/>
+  <rect width="1200" height="630" fill="url(#og-glow)"/>
+
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#bb693a" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <g transform="translate(90, 110)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#bb693a">PORTFOLIO &amp; SELECTED WORK</text>
+    <text x="0" y="90" font-family="Georgia, serif" font-style="italic" font-size="64" font-weight="400" fill="#f5f0e6">Sudhanshu Kumar Pandey</text>
+    <text x="0" y="150" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="400" fill="#efece4" fill-opacity="0.8">B.E. Data Science Student • Python &amp; Web Developer • Exploring AI</text>
+    <text x="0" y="190" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="400" fill="#efece4" fill-opacity="0.5">PES Institute of Technology &amp; Management • Shivamogga, Karnataka, India</text>
+
+    <g transform="translate(0, 290)">
+      <rect x="0" y="0" width="170" height="40" rx="20" fill="#bb693a" fill-opacity="0.2" stroke="#bb693a" stroke-opacity="0.5"/>
+      <text x="85" y="25" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#f5f0e6">FoodWise</text>
+
+      <rect x="190" y="0" width="180" height="40" rx="20" fill="#bb693a" fill-opacity="0.2" stroke="#bb693a" stroke-opacity="0.5"/>
+      <text x="280" y="25" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#f5f0e6">Exam Guardrail</text>
+
+      <rect x="390" y="0" width="160" height="40" rx="20" fill="#bb693a" fill-opacity="0.2" stroke="#bb693a" stroke-opacity="0.5"/>
+      <text x="470" y="25" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#f5f0e6">ResQ-AI</text>
+
+      <rect x="570" y="0" width="260" height="40" rx="20" fill="#bb693a" fill-opacity="0.2" stroke="#bb693a" stroke-opacity="0.5"/>
+      <text x="700" y="25" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#f5f0e6">Tribal Scholarship (SIH)</text>
+    </g>
+  </g>
+
+  <text x="1070" y="540" text-anchor="end" font-family="sans-serif" font-size="14" font-weight="500" fill="#bb693a">github.com/Sudhanshu-22-11</text>
 </svg>

@@ -1,6 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-  <rect width="1600" height="900" fill="#e6dde4"/>
-  <rect x="64.0" y="54.0" width="1472.0" height="792.0" fill="none" stroke="#24101e" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="10 8"/>
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, serif" font-style="italic" font-size="63" fill="#24101e" fill-opacity="0.65">Article Three</text>
-  <text x="50%" y="531.0" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="25" letter-spacing="3" fill="#24101e" fill-opacity="0.4">REPLACE WITH YOUR OWN IMAGE</text>
+  <defs>
+    <linearGradient id="j3-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082b21"/>
+      <stop offset="60%" stop-color="#0c382b"/>
+      <stop offset="100%" stop-color="#041b14"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#j3-bg)"/>
+  <rect x="40" y="40" width="1520" height="820" rx="16" fill="none" stroke="#f8e7c9" stroke-opacity="0.3" stroke-width="1.5"/>
+  <g transform="translate(100, 120)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#f8e7c9">JOURNAL / PUBLIC GOVERNANCE</text>
+    <text x="0" y="100" font-family="Georgia, serif" font-style="italic" font-size="64" font-weight="400" fill="#fef9ee">Unified Public Service Architecture</text>
+    <text x="0" y="170" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="300" fill="#f8e7c9" fill-opacity="0.85">Designing One Profile &amp; Verification Layer for Tribal Welfare</text>
+  </g>
+  <text x="1460" y="800" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600" fill="#f8e7c9">SIH 2026 • Sudhanshu Kumar Pandey</text>
 </svg>

@@ -67,8 +67,8 @@ export default function Work() {
                         <span className="text-[6vw] font-light leading-none opacity-30 tracking-tighter">
                             ({projectsData.length})
                         </span>
-                        <p className="max-w-xs text-xs md:text-sm uppercase leading-relaxed tracking-wider opacity-60">
-                            A rhythmic collection of architectural digital experiences and brand identities.
+                        <p className="max-w-sm text-xs md:text-sm uppercase leading-relaxed tracking-wider opacity-60">
+                            A collection of verified full-stack platforms, emergency utilities, and national hackathon prototypes.
                         </p>
                     </div>
                 </div>

@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CreativeButton from "@/components/CreativeButton";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -62,7 +63,7 @@ export default function About() {
                             <div className="w-full max-w-sm sm:max-w-md lg:max-w-none mx-auto aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 rounded-lg">
                                 <img
                                     src="/images/profile-placeholder.svg"
-                                    alt="Your Name — 3D immersive web designer"
+                                    alt="Sudhanshu Kumar Pandey — Data Science Student & Developer"
                                     width={1086}
                                     height={1448}
                                     className="hero-image w-full h-full object-cover object-center"
@@ -72,84 +73,136 @@ export default function About() {
                         <div className="lg:col-span-7 fade-up-section">
                             <span className="text-xs font-bold tracking-[0.2em] uppercase opacity-40">(Profile)</span>
                             <p className="font-sans mt-6 text-xl sm:text-2xl lg:text-3xl font-light leading-snug text-slate-800 tracking-tight">
-                                Your Name is a multidisciplinary designer specializing in Web3D experiences,
-                                immersive landing pages, and brand identity design. Replace this paragraph with
-                                a short introduction about yourself and what you do.
+                                Sudhanshu Kumar Pandey is a second-year B.E. Data Science student at PES Institute of Technology &amp; Management, Shivamogga, passionate about Python development, web applications, and practical AI.
                             </p>
                             <p className="font-sans mt-6 text-base md:text-lg leading-relaxed text-slate-600">
-                                This is placeholder bio text. Use this space to describe your background, the
-                                tools you work with, and the kinds of clients or projects you focus on. Two to
-                                four sentences keeps this section balanced with the profile image beside it.
+                                I enjoy learning new technologies, building practical projects, and applying technical knowledge to solve real-world problems. Whether architecting circular food-waste telemetry, offline-first emergency systems, or public scholarship gateways, I believe in grounded, accessible software engineering.
                             </p>
+                            <div className="mt-8 flex flex-wrap gap-4">
+                                <CreativeButton href="/contact" tone="dark" className="px-7 py-3.5">
+                                    Get in Touch
+                                </CreativeButton>
+                                <a
+                                    href="https://github.com/Sudhanshu-22-11"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-black/30 text-xs font-bold uppercase tracking-widest hover:border-black hover:bg-black/5 transition-colors"
+                                >
+                                    GitHub Profile ↗
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 {/* Experience & Skills List */}
                 <section className="py-20">
+                    {/* Education */}
                     <div className="fade-up-section group border-t border-slate-900 py-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-start hover:bg-slate-900 hover:text-white transition-colors duration-300 px-4 -mx-4 cursor-default">
                         <div className="md:col-span-4">
-                            <span className="text-sm font-bold tracking-widest">(01) EXPERIENCE</span>
+                            <span className="text-sm font-bold tracking-widest">(01) EDUCATION</span>
                         </div>
                         <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
                             <div>
-                                <h4 className="font-bold uppercase text-xs mb-4 opacity-60">Currently</h4>
-                                <p className="font-sans text-xl">
-                                    Your Current Role
+                                <h4 className="font-bold uppercase text-xs mb-3 opacity-60">Institution</h4>
+                                <p className="font-sans text-xl font-medium">
+                                    PESITM Shivamogga
                                     <br />
-                                    <span className="text-base opacity-70">Company or platform name</span>
+                                    <span className="text-sm opacity-70">PES Institute of Technology &amp; Management</span>
                                 </p>
                             </div>
                             <div>
-                                <h4 className="font-bold uppercase text-xs mb-4 opacity-60">Focus Areas</h4>
-                                <p className="font-sans text-xl">
-                                    Web3D & Immersive Experiences
+                                <h4 className="font-bold uppercase text-xs mb-3 opacity-60">Program &amp; Status</h4>
+                                <p className="font-sans text-xl font-medium">
+                                    B.E. in Data Science
                                     <br />
-                                    <span className="text-base opacity-70">Your specialties here</span>
+                                    <span className="text-sm opacity-70">2nd Year Undergrad • Shivamogga, Karnataka</span>
                                 </p>
                             </div>
                         </div>
                     </div>
 
+                    {/* Technical Skills */}
                     <div className="fade-up-section group border-t border-slate-900 py-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-start hover:bg-slate-900 hover:text-white transition-colors duration-300 px-4 -mx-4 cursor-default">
                         <div className="md:col-span-4">
-                            <span className="text-sm font-bold tracking-widest">(02) TOOLS</span>
+                            <span className="text-sm font-bold tracking-widest">(02) TECHNICAL SKILLS</span>
                         </div>
-                        <div className="md:col-span-8 flex flex-wrap gap-x-12 gap-y-4">
-                            <p className="font-sans text-xl">Tool One</p>
-                            <p className="font-sans text-xl">Tool Two</p>
-                            <p className="font-sans text-xl">Tool Three</p>
-                            <p className="font-sans text-xl">Tool Four</p>
-                            <p className="font-sans text-xl">Tool Five</p>
-                            <p className="font-sans text-xl">Tool Six</p>
+                        <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                            <div>
+                                <h4 className="font-bold uppercase text-xs mb-3 opacity-60">Languages &amp; Web</h4>
+                                <div className="space-y-2">
+                                    <p className="font-sans text-lg font-medium">Python • C • Basic JavaScript</p>
+                                    <p className="font-sans text-sm opacity-70">HTML5 &amp; CSS3 • React (Learning &amp; Familiar)</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 className="font-bold uppercase text-xs mb-3 opacity-60">Data Science &amp; Interests</h4>
+                                <div className="space-y-2">
+                                    <p className="font-sans text-lg font-medium">Pandas • NumPy • Matplotlib</p>
+                                    <p className="font-sans text-sm opacity-70">Data Analysis • Data Visualization • Machine Learning Fundamentals • AI Tools &amp; APIs</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+                    {/* Achievements */}
+                    <div className="fade-up-section group border-t border-slate-900 py-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-start hover:bg-slate-900 hover:text-white transition-colors duration-300 px-4 -mx-4 cursor-default">
+                        <div className="md:col-span-4">
+                            <span className="text-sm font-bold tracking-widest">(03) ACHIEVEMENTS</span>
+                        </div>
+                        <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                            <div>
+                                <h4 className="font-bold uppercase text-xs mb-2 text-primary group-hover:text-amber-400">Award</h4>
+                                <h3 className="font-sans text-xl font-bold">Best Pitching Award</h3>
+                                <p className="font-sans text-sm opacity-70 mt-1">Team Anvay — Recognized for effective project pitching and conceptual clarity.</p>
+                            </div>
+                            <div>
+                                <h4 className="font-bold uppercase text-xs mb-2 opacity-60">Hackathon</h4>
+                                <h3 className="font-sans text-xl font-bold">Hack Fest 1.0</h3>
+                                <p className="font-sans text-sm opacity-70 mt-1">Certificate of Participation — Collaborative coding and rapid problem-solving event.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Certifications */}
+                    <div className="fade-up-section group border-t border-slate-900 py-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-start hover:bg-slate-900 hover:text-white transition-colors duration-300 px-4 -mx-4 cursor-default">
+                        <div className="md:col-span-4">
+                            <span className="text-sm font-bold tracking-widest">(04) CERTIFICATION</span>
+                        </div>
+                        <div className="md:col-span-8">
+                            <h4 className="font-bold uppercase text-xs mb-2 text-primary group-hover:text-amber-400">Credential</h4>
+                            <h3 className="font-sans text-xl font-bold">AI Fluency for Students — Certificate of Completion</h3>
+                            <p className="font-sans text-sm opacity-70 mt-2 max-w-2xl leading-relaxed">
+                                Issued by Anthropic. Associated credential in collaboration with University College Cork (UCC), Ringling College of Art and Design, Higher Education Authority (HEA), and National Forum. Demonstrates verified understanding of foundational AI concepts and ethical fluency.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Opportunities & Goals */}
                     <div className="fade-up-section group border-t border-b border-slate-900 py-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-start hover:bg-slate-900 hover:text-white transition-colors duration-300 px-4 -mx-4 cursor-default">
                         <div className="md:col-span-4">
-                            <span className="text-sm font-bold tracking-widest">(03) SERVICES</span>
+                            <span className="text-sm font-bold tracking-widest">(05) COLLABORATION &amp; GOALS</span>
                         </div>
                         <div className="md:col-span-8 flex flex-wrap gap-x-12 gap-y-4">
-                            <p className="font-sans text-xl">Brand Identity Design</p>
-                            <p className="font-sans text-xl">Immersive Landing Pages</p>
-                            <p className="font-sans text-xl">Custom Business Websites</p>
-                            <p className="font-sans text-xl">3D Web Experiences</p>
-                            <p className="font-sans text-xl">UI/UX Design</p>
+                            <p className="font-sans text-lg font-medium">Internship Opportunities</p>
+                            <p className="font-sans text-lg font-medium">Data Science &amp; Analysis</p>
+                            <p className="font-sans text-lg font-medium">Collaborative Hackathon Projects</p>
+                            <p className="font-sans text-lg font-medium">Freelance Web Development</p>
+                            <p className="font-sans text-lg font-medium">AI &amp; Machine Learning Exploration</p>
                         </div>
                     </div>
                 </section>
 
-                {/* Testimonial Section */}
+                {/* Perspective Section */}
                 <section className="fade-up-section py-32 flex flex-col items-center text-center">
                     <span className="material-symbols-outlined text-primary mb-8 text-5xl">format_quote</span>
-                    <blockquote className="text-3xl md:text-5xl font-display font-medium tracking-tight leading-[1.2] max-w-4xl italic">
-                        &quot;This is a placeholder testimonial. Replace it with a real quote from a client
-                        or collaborator about working with you.&quot;
+                    <blockquote className="text-2xl md:text-4xl lg:text-5xl font-display font-medium tracking-tight leading-[1.25] max-w-4xl italic">
+                        &quot;The goal is not just to analyze data or write code in isolation, but to engineer reliable solutions that make an immediate, tangible impact on everyday challenges.&quot;
                     </blockquote>
-                    <cite className="mt-12 not-italic">
-                        <span className="block font-bold text-lg text-slate-900">Client Name</span>
+                    <cite className="mt-10 not-italic">
+                        <span className="block font-bold text-lg text-slate-900">Sudhanshu Kumar Pandey</span>
                         <span className="block text-xs uppercase tracking-widest opacity-60">
-                            Role, Company
+                            2nd-Year B.E. Data Science Student • PESITM Shivamogga
                         </span>
                     </cite>
                 </section>

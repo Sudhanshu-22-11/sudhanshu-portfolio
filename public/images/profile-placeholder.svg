@@ -1,6 +1,107 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1086" height="1448" viewBox="0 0 1086 1448">
-  <rect width="1086" height="1448" fill="#e8e2d8"/>
-  <rect x="43.44" y="86.88" width="999.12" height="1274.24" fill="none" stroke="#241a10" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="10 8"/>
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, serif" font-style="italic" font-size="76" fill="#241a10" fill-opacity="0.65">Your Photo</text>
-  <text x="50%" y="821.74" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="3" fill="#241a10" fill-opacity="0.4">REPLACE WITH YOUR OWN IMAGE</text>
+  <defs>
+    <linearGradient id="profile-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b1712"/>
+      <stop offset="50%" stop-color="#241e18"/>
+      <stop offset="100%" stop-color="#120f0c"/>
+    </linearGradient>
+    <radialGradient id="profile-glow" cx="50%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#bb693a" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#bb693a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="profile-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bb693a" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#f5e6d3" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#bb693a" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1086" height="1448" fill="url(#profile-bg)"/>
+  <rect width="1086" height="1448" fill="url(#profile-glow)"/>
+
+  <!-- Subtle architectural grid -->
+  <g stroke="#bb693a" stroke-opacity="0.08" stroke-width="1">
+    <line x1="120" y1="0" x2="120" y2="1448"/>
+    <line x1="543" y1="0" x2="543" y2="1448"/>
+    <line x1="966" y1="0" x2="966" y2="1448"/>
+    <line x1="0" y1="200" x2="1086" y2="200"/>
+    <line x1="0" y1="724" x2="1086" y2="724"/>
+    <line x1="0" y1="1200" x2="1086" y2="1200"/>
+  </g>
+
+  <!-- Decorative border frame -->
+  <rect x="54" y="54" width="978" height="1340" rx="20" fill="none" stroke="url(#profile-border)" stroke-width="1.5"/>
+
+  <!-- Top bar metadata -->
+  <g transform="translate(100, 110)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#bb693a">PROFILE DOSSIER</text>
+    <text x="886" y="0" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600" letter-spacing="3" fill="#efece4" fill-opacity="0.5">EST. 2026</text>
+  </g>
+
+  <!-- Central monogram badge -->
+  <g transform="translate(543, 400)">
+    <!-- Outer concentric rings -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#bb693a" stroke-opacity="0.15" stroke-width="1"/>
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#bb693a" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="6 6"/>
+    <circle cx="0" cy="0" r="120" fill="#241e18" stroke="#bb693a" stroke-opacity="0.5" stroke-width="2"/>
+
+    <!-- Monogram letters -->
+    <text x="0" y="24" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="78" font-weight="400" fill="#efece4">SKP</text>
+    <circle cx="0" cy="65" r="4" fill="#bb693a"/>
+  </g>
+
+  <!-- Identity Block -->
+  <g transform="translate(543, 680)" text-anchor="middle">
+    <text x="0" y="0" font-family="Georgia, serif" font-style="italic" font-size="48" font-weight="400" fill="#efece4">Sudhanshu Kumar Pandey</text>
+    <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600" letter-spacing="3" fill="#bb693a">B.E. DATA SCIENCE STUDENT</text>
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="400" fill="#efece4" fill-opacity="0.7">PES Institute of Technology &amp; Management (PESITM)</text>
+    <text x="0" y="106" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="400" fill="#efece4" fill-opacity="0.5">Shivamogga, Karnataka, India</text>
+  </g>
+
+  <!-- Technical Focus Matrix -->
+  <g transform="translate(110, 880)">
+    <rect width="866" height="340" rx="16" fill="#14110d" stroke="#bb693a" stroke-opacity="0.25" stroke-width="1"/>
+
+    <g transform="translate(40, 40)">
+      <!-- Col 1 -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#bb693a">DEVELOPMENT</text>
+        <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="500" fill="#efece4">Python &amp; C</text>
+        <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="400" fill="#efece4" fill-opacity="0.7">HTML5 &amp; CSS3</text>
+        <text x="0" y="90" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="400" fill="#efece4" fill-opacity="0.7">Basic JavaScript</text>
+        <text x="0" y="118" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="400" fill="#bb693a" fill-opacity="0.9">React (Learning)</text>
+      </g>
+
+      <!-- Col 2 -->
+      <g transform="translate(280, 0)">
+        <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#bb693a">DATA SCIENCE</text>
+        <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="500" fill="#efece4">Pandas &amp; NumPy</text>
+        <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="400" fill="#efece4" fill-opacity="0.7">Matplotlib Charts</text>
+        <text x="0" y="90" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="400" fill="#efece4" fill-opacity="0.7">Exploratory Analysis</text>
+        <text x="0" y="118" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="400" fill="#bb693a" fill-opacity="0.9">Machine Learning Foundations</text>
+      </g>
+
+      <!-- Col 3 -->
+      <g transform="translate(560, 0)">
+        <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#bb693a">HONORS &amp; CERT</text>
+        <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="500" fill="#efece4">Best Pitching Award</text>
+        <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="400" fill="#efece4" fill-opacity="0.6">Team Anvay</text>
+        <text x="0" y="90" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="400" fill="#efece4" fill-opacity="0.8">AI Fluency — Anthropic</text>
+        <text x="0" y="118" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="400" fill="#bb693a" fill-opacity="0.9">Hack Fest 1.0 Participant</text>
+      </g>
+    </g>
+
+    <!-- Bottom verification pill -->
+    <g transform="translate(40, 260)">
+      <circle cx="10" cy="12" r="5" fill="#10b981"/>
+      <text x="26" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#10b981">AVAILABLE FOR INTERNSHIPS &amp; COLLABORATION</text>
+    </g>
+  </g>
+
+  <!-- Bottom Stamp -->
+  <g transform="translate(100, 1320)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#efece4" fill-opacity="0.4">GITHUB: Sudhanshu-22-11</text>
+    <text x="886" y="0" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#bb693a">anshu402pandey@gmail.com</text>
+  </g>
 </svg>

@@ -83,38 +83,46 @@ export default function Home() {
       <section data-cursor="none" className="px-6 md:px-12 lg:px-24 mb-20 md:mb-32 lg:mb-48 min-h-svh flex flex-col items-center justify-center relative z-10 text-center overflow-hidden">
         <HeroScene />
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-40 bg-gradient-to-b from-transparent to-background-light" />
-        {/* soft warm scrim behind the name for readability over the busy scene */}
+        {/* soft warm scrim behind the name for readability over the 3D scene */}
         <div className="pointer-events-none absolute inset-0 z-[2] flex items-center justify-center">
-          <div className="h-[58vh] w-[88vw] max-w-[1100px] bg-[radial-gradient(ellipse_at_center,rgba(255,250,242,0.42)_0%,rgba(255,250,242,0)_68%)]" />
+          <div className="h-[58vh] w-[88vw] max-w-[1100px] bg-[radial-gradient(ellipse_at_center,rgba(255,250,242,0.45)_0%,rgba(255,250,242,0)_70%)]" />
         </div>
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto flex flex-col items-center">
-          {/* Headline — the name; generous leading keeps the y/g descenders clear of the reveal masks */}
+          {/* Headline — Sudhanshu Kumar Pandey */}
           <div className="overflow-hidden">
-            <h1 className="hero-text font-display italic font-light text-[14.5vw] md:text-[11.5vw] lg:text-[min(10.5vw,24vh,10.5rem)] leading-[1.32] tracking-[-0.01em] text-[#241a10] [text-shadow:0_2px_26px_rgba(255,249,240,0.85)]">
-              Your
+            <h1 className="hero-text font-display italic font-light text-[13.5vw] md:text-[10.5vw] lg:text-[min(9.5vw,22vh,9.5rem)] leading-[1.25] tracking-[-0.01em] text-[#241a10] [text-shadow:0_2px_26px_rgba(255,249,240,0.85)]">
+              Sudhanshu
             </h1>
           </div>
-          <div className="overflow-hidden -mt-[0.36em]">
-            <h1 className="hero-text font-display italic font-light text-[14.5vw] md:text-[11.5vw] lg:text-[min(10.5vw,24vh,10.5rem)] leading-[1.32] tracking-[-0.01em] text-[#241a10] [text-shadow:0_2px_26px_rgba(255,249,240,0.85)]">
-              Name
+          <div className="overflow-hidden -mt-[0.25em]">
+            <h1 className="hero-text font-display italic font-light text-[10.5vw] md:text-[8.5vw] lg:text-[min(7.8vw,18vh,7.8rem)] leading-[1.25] tracking-[-0.01em] text-[#241a10] [text-shadow:0_2px_26px_rgba(255,249,240,0.85)]">
+              Kumar Pandey
             </h1>
           </div>
 
-          <p className="hero-sub mt-5 md:mt-7 max-w-xl text-balance text-base md:text-lg font-medium leading-relaxed text-[#2a1d11]">
-            Immersive 3D websites and brand identities for brands that refuse to blend in.
+          <p className="hero-sub mt-4 md:mt-6 max-w-2xl text-balance text-base md:text-lg font-medium leading-relaxed text-[#2a1d11]">
+            2nd-Year Data Science Student &amp; Developer passionate about Python, modern web development, and exploring AI applications.
           </p>
 
-          {/* Glass CTA — hero only (rest of site uses CreativeButton) */}
-          <Link
-            href="/work"
-            className="hero-sub liquid-glass group mt-6 md:mt-7 inline-flex items-center gap-2.5 rounded-full px-6 py-3 text-[11px] md:text-xs font-bold uppercase tracking-[0.16em] text-white [text-shadow:0_1px_3px_rgba(0,0,0,0.5),0_1px_12px_rgba(0,0,0,0.32)]"
-          >
-            View My Work
-            <span className="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">
-              arrow_forward
-            </span>
-          </Link>
+          {/* Hero CTAs */}
+          <div className="hero-sub mt-6 md:mt-8 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              href="/work"
+              className="liquid-glass group inline-flex items-center gap-2.5 rounded-full px-7 py-3.5 text-[11px] md:text-xs font-bold uppercase tracking-[0.16em] text-white [text-shadow:0_1px_3px_rgba(0,0,0,0.5),0_1px_12px_rgba(0,0,0,0.32)]"
+            >
+              View Projects
+              <span className="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1">
+                arrow_forward
+              </span>
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2.5 rounded-full px-7 py-3.5 text-[11px] md:text-xs font-bold uppercase tracking-[0.16em] text-[#241a10] border border-[#241a10]/35 hover:border-[#241a10] hover:bg-black/5 transition-all backdrop-blur-sm"
+            >
+              Contact Me
+            </Link>
+          </div>
         </div>
 
         <div className="hero-sub absolute bottom-6 md:bottom-8 lg:bottom-10 inset-x-6 md:inset-x-12 lg:inset-x-24 z-20 flex items-center justify-between text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#473829]">
@@ -123,22 +131,22 @@ export default function Home() {
               <span className="absolute inset-0 inline-flex rounded-full bg-green-500 animate-pulse-ring"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500 animate-pulse-dot"></span>
             </span>
-            <span className="group-hover/avail:hidden">Open to Work</span>
-            <span className="hidden group-hover/avail:inline normal-case">let&apos;s talk :)</span>
+            <span className="group-hover/avail:hidden">Open to Internships</span>
+            <span className="hidden group-hover/avail:inline normal-case">let&apos;s collaborate :)</span>
           </span>
-          <span>Your City, Country</span>
+          <span>Shivamogga, Karnataka, India</span>
         </div>
       </section>
 
       {/* Featured Work */}
       <section className="px-6 md:px-12 lg:px-24 pb-20 md:pb-32 border-t border-black pt-12 md:pt-20">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-12 md:mb-20 fade-up">
-          <h2 className="text-sm font-bold uppercase tracking-widest opacity-50">(Selected Work)</h2>
+          <h2 className="text-sm font-bold uppercase tracking-widest opacity-50">(Featured Projects)</h2>
           <Link
             href="/work"
             className="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors border-b border-black pb-1"
           >
-            View All
+            View All ({projectsData.length})
           </Link>
         </div>
 
@@ -151,7 +159,7 @@ export default function Home() {
               data-cursor="large"
             >
               <div
-                className={`${idx % 2 === 0 ? "lg:col-span-8" : "lg:col-span-8 lg:order-last"} w-full relative overflow-hidden bg-zinc-200`}
+                className={`${idx % 2 === 0 ? "lg:col-span-8" : "lg:col-span-8 lg:order-last"} w-full relative overflow-hidden bg-zinc-200 rounded-lg`}
               >
                 <SmartImage
                   src={project.heroImage || project.images?.[0] || ""}
@@ -169,7 +177,7 @@ export default function Home() {
                   0{idx + 1}
                   {project.role ? ` / ${project.role}` : ""}
                 </span>
-                <h3 className="text-2xl md:text-4xl lg:text-6xl font-display font-medium uppercase tracking-tighter leading-[0.9] mb-4 md:mb-6 transition-all duration-500">
+                <h3 className="text-2xl md:text-4xl lg:text-5xl font-display font-medium uppercase tracking-tighter leading-[0.95] mb-4 md:mb-6 transition-all duration-500">
                   {project.title || project.slug.replace(/-/g, " ")}
                 </h3>
                 {project.concept && (
@@ -179,7 +187,7 @@ export default function Home() {
                 )}
                 {!project.concept && <div className="mb-4"></div>}
                 <CreativeButton tone="dark" className="w-fit px-7 py-4">
-                  View Case
+                  Explore Project
                 </CreativeButton>
               </div>
             </Link>
@@ -191,7 +199,7 @@ export default function Home() {
             href="/work"
             className="group inline-flex items-center gap-4 font-bold uppercase tracking-widest text-sm hover:text-primary transition-colors"
           >
-            Explore Full Gallery
+            Explore All Projects
             <span className="material-symbols-outlined transform group-hover:translate-x-2 transition-transform">
               arrow_forward
             </span>
@@ -202,12 +210,12 @@ export default function Home() {
       {/* Mission / Call to action */}
       <section className="py-32 md:py-48 px-6 md:px-12 lg:px-24 bg-black text-white selection:bg-primary selection:text-white">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-          <span className="material-symbols-outlined text-primary mb-8 text-5xl">language</span>
+          <span className="material-symbols-outlined text-primary mb-8 text-5xl">terminal</span>
           <h2 className="text-3xl md:text-5xl lg:text-7xl font-display font-bold tracking-tighter leading-[1.1] mb-12 uppercase">
-            Engineering digital luxury through interactive motion and minimal aesthetics.
+            Transforming data science foundations &amp; practical code into impactful digital solutions.
           </h2>
           <CreativeButton href="/contact" tone="light" className="px-10 py-5">
-            Start a Project
+            Let&apos;s Connect
           </CreativeButton>
         </div>
       </section>
